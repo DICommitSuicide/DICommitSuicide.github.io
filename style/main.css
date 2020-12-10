@@ -1,0 +1,10 @@
+.container{
+    max-width: 900px;
+    top: 270px;
+    left: 510px;
+}
+
+body{
+    background: #232d43 none repeat scroll 0% 0%;
+    background-image: url(../img/back2.png);
+}
