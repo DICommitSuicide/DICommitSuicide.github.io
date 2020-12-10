@@ -1,0 +1,1 @@
+# DICommitSuicide.github.io
