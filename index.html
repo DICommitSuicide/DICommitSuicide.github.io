@@ -3,32 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our project Site</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/main.css">
-
-    <!---- <img src="./img/logo.png" class="rounded mx-auto d-block" alt="logo"> -->
-  <!---  <div class="nonframe">
-    <a href="./index.html"><img src="../img/logo.png" class="image-center"></a></div>  --->
-</div>
+    <link rel=stylesheet href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <style>
+    .text{
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+}
+    </style>
 </head>
 <body>
-    <header>
-      <img src="./img/logo.png" class="rounded mx-auto d-block" alt="logo">
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Home</a>
-          <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Blog</a>
-          <form class="d-flex">
-            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-    </header>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+   <header id="header" class="sticky-top">
+       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000">
+           <div class="container-fluid">
+               <a href="#" class="navbar-brand topbar1">Web Dev Blog :</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navContent">
+                   <ul class="navbar-nav mr-auto mb-3 mb-lg-0 topbar">
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">Main Page</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">Glebov</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">Kulik</a>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a href="#" class="nav-link dropdown-toggle" id="navDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                           >Our Team</a>
+                           <ul class="dropdown-menu" aria-labelledby="navDrop">
+                               <li><a href="#" class="dropdown-item">Glebov</a></li>
+                               <li><hr class="dropdown-divider"></li>
+                               <li><a href="#" class="dropdown-item">Kulik</a></li>
+                               <li><hr class="dropdown-divider"></li>
+                               <li><a href="#" class="dropdown-item">Drop3</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+   </header>
+   
+<div id="fullpage">
+  <div class="vertical-scrolling">
+   <section id="hero" class="d-flex align-items-center justify-content-center">
+       <div class="container text-center">
+           <div class="row justify-content-center">
+               <div class="col-md-6 col-lg-8">
+                   <h1 class="text"></h1>
+                   <h2>Это сайт команды разработчиков Malina Squad, здесь вы можете найти информацию о наших проектах и о нас самих, а также в случае необходимости связаться с нами</h2>
+               </div>
+            </div>
+       </div>
+   </section>
+   </div>
+   <section class="tech my-5 vertical-scrolling">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
+                   <div class="icon-box">
+                       <div class="icon">
+                       <img src="./img/html.svg" height="150px" width="150px">
+                       </div>
+                       <h4>HTML 5</h4>
+                       <p>Язык для структурирования и представления содержимого всемирной паутины. В HTML5 реализовано множество новых синтаксических особенностей: элементы video, audio и canvas, а также возможность использования SVG и математических формул. </p>
+                   </div>
+               </div>
+               <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
+                   <div class="icon-box">
+                       <div class="icon">
+                       <img src="./img/css.svg" height="150px" width="150px">
+                       </div>
+                       <h4>CSS 3</h4>
+                       <p>Формальный язык описания внешнего вида веб-страницы, реализованный с помощью языка разметки. Главной особенностью CSS3 является возможность создавать анимированные элементы без использования JS, поддержка линейных и радиальных градиентов, теней, сглаживания и прочее.</p>
+                   </div>
+               </div>
+               <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
+                   <div class="icon-box">
+                       <div class="icon">
+                       <img src="./img/bootstrap.svg" height="150px" width="150px">
+                       </div>
+                       <h4>Bootstrap 5</h4>
+                       <p>Свободный набор инструментов для создания сайтов и веб-приложений. Включает в себя HTML- и CSS-шаблоны оформления для типографики, веб-форм, кнопок, меток, блоков навигации и прочих компонентов веб-интерфейса, включая JavaScript-расширения.</p>
+                   </div>
+               </div>
+               <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
+                   <div class="icon-box">
+                       <div class="icon">
+                       <img src="./img/js.svg" height="150px" width="150px">
+                       </div>
+                       <h4>JavaScript</h4>
+                       <p>Динамический язык программирования, применяемый к HTML документам, обеспечивает динамическую интерактивность на веб-сайтах. Существует большое количество инструментов поверх основного языка JavaScript, которые разблокируют огромное количество дополнительных функций.</p>
+                   </div>
+               </div>                                                                                     
+           </div>
+       </div>
+   </section>
+   <section class="vertical-scrolling">
+      <div class="cta">
+       <div class="container text-center">
+           <h3>HISTORY OF WEBSITE DEVELOPMENT</h3>
+      </div></div>
+              <div class="container text-center">
+               <div class="row d-flex justify-content-center">
+               <div class="mt-3 col-lg-7 pt-5 pt-lg-0 content">
+                   <h3>HTML & CSS</h3>
+                   <ul class="text-start">
+                           <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Изучение базовой информации о HTML и CSS, их принципы и способы взаимодействия</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                    </ul>
+               </div>
+               <div class="col-lg-7 pt-5 pt-lg-0 content">
+                   <h3>Первые шаги в Web-дизайне</h3>
+                   <ul class="text-start">
+                           <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Изучение базовой информации о HTML и CSS, их принципы и способы взаимодействия</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                    </ul>
+               </div>
+               <div class="col-lg-7 pt-5 pt-lg-0 content">
+                   <h3>Bootstrap 5</h3>
+                   <ul class="text-start">
+                           <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Изучение базовой информации о HTML и CSS, их принципы и способы взаимодействия</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                    </ul>
+               </div>
+               <div class="col-lg-7 pt-5 pt-lg-0 content">
+                   <h3>JavaScript</h3>
+                   <ul class="text-start">
+                           <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Изучение базовой информации о HTML и CSS, их принципы и способы взаимодействия</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                    </ul>
+               </div>
+               <div class="col-lg-7 pt-5 pt-lg-0 content">
+                   <h3>JQuery</h3>
+                   <ul class="text-start">
+                           <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Изучение базовой информации о HTML и CSS, их принципы и способы взаимодействия</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                               <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                               </svg>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quae!</li>
+                    </ul>
+               </div>
+           </div>
+       </div>
+   </section>
+   </div>
+   
+    <!-- Bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Scramble Анимация  -->
+    <script src="js/index.js"></script>
+    <!-- JS Scrolling  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionSelector: '.vertical-scrolling',
+                scrollingSpeed: 1000,
+            });
+        });
+    </script>
 </body>
 </html>
